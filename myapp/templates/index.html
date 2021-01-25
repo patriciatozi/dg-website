@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
+    <--<link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <title>Data Girls - Neuron</title>
 
@@ -26,6 +26,10 @@
         user-select: none;
       }
 
+      .navbar-custom {
+    background-color: lightgreen;
+     }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -42,7 +46,10 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
+      <img src="static/img/pp.jpg" width="40" alt="">
+      <a class="navbar-brand" href="#">
+        <img src="static/img/name.png" width="102" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -81,9 +88,7 @@
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+
           </div>
         </div>
       </div>
@@ -159,11 +164,17 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">#DicadeApp <span class="text-muted"></span></h2>
+        <p class="lead">Hoje nossa #Dica é sobre o aplicativo: Probability Distributions!
+          Prático e extremamente simples de usar, é o app ideal para aqueles que já se aventuram em estatística, exigindo o conhecimento prévio em distribuições de probabilidade.
+          Ele permite que você calcule diversas funções em seu dispositivo Android ou IOS, entre elas, funções de Poisson, Hipergeométrica e Gaussiana, Teste T, Qui-quadrado, distribuições Log-normais (entre outras), e ainda possibilita gerar gráficos!
+          E ai já conheciam esse?! Indiquem para nós nos comentários os aplicativos favoritos de vocês também!
+          <br><br>
+          Texto: Beatriz Mattos (@ne.cro.lust)<br>
+          Arte: Bárbara Romagnoli (@babiromagnoli)</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img src="static/img/dica_de_app.jpg" width="500" height="500" alt="">
 
       </div>
     </div>
@@ -171,13 +182,25 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">#MulheresNotórias</h2>
+        <p class="lead">
+          A mulher notória de hoje é a Gabriela de Queiroz, a Cientista de Dados criadora da comunidade R-Ladies e do AI Inclusive!
+          Gabriela é graduada em Estatística pela Universidade do Estado do Rio de Janeiro. É mestra em Epidemiologia na ENSP - Fiocruz. E mestra em Estatística pela  California State University.
+          Em 2012, ela fundou o R-Ladies, visando “promover a diversidade na comunidade R por meio de encontros e mentorias”. E em 2016, fundou a AI Inclusive que “ajuda a aumentar a representação e participação de minorias de gênero na Inteligência Artificial (AI)”. Em 2018, começou a trabalhar na IBM como desenvolvedora e logo foi promovida a gerente de engenharia e ciência de dados, cargo que ocupa até os dias de hoje!
+          Além de uma carreira brilhante, a história de Gabriela é uma história de inclusão de diversidade nas áreas de Tecnologia! Como não se inspirar?
+          <br>
+          Conhece alguma mulher notória que mais gente precisa conhecer? Comenta aqui! Ela pode ser a próxima homenageada!
+          <br>
+          Fonte: k-roz.com <br>
+          https://www.linkedin.com/in/gabrieladequeiroz <br>
+          G1.com <br><br>
+          Arte: Letícia Barbosa <br>
+          Texto: Letícia Barbosa e Myrla Rocha
+        </p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="static/img/gabriela_de_queiroz.jpg" width="500" height="500" alt="">
       </div>
     </div>
 
