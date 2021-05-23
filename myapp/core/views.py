@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import SocialMedia
 
-# Create your views here.
+def index(request):
+    social_medias = SocialMedia.objects.all()
+    return render(request, 'index.html', {})
