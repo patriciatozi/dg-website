@@ -134,18 +134,17 @@
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
+    {% block content %}
     <div class="row">
       <div class="col-lg-4">
-        {% block content %}
-        {% for socialmedia in socialmedias %}
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ socialmedia.image.url }}" width="100%" height="200"></svg>
-        <h2>{{ socialmedia.title }}</h2>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        {% for social_media in social_medias %}
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ social_media.image.url }}" width="100%" height="200"></svg>
+        <h2>{{ social_media.title }}</h2>
         {% endfor %}
       </div><!-- /.col-lg-4 -->
-      {% endblock %}
     </div><!-- /.row -->
-
+    {% endblock %}
+  </div>  
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
